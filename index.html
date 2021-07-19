@@ -22,27 +22,55 @@
 
     <body>
 
-        <!--  Home Title Page  -->
+        <!--  Navigation Bar  -->
         <nav id = "header">
-            <div class="homebtn-container">
-                <a href= "" id="navbar-logo">Harmoniartica</a>
+            <div class= "homebtn-container">
+                <a href= "/" id = "navbar-logo">
+                    <span id = "harmoniartica-logo" style="background: linear-gradient(90deg, rgb(122, 217, 255) 0%,
+                    rgb(191, 247, 158) 100%);-webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;font-weight: 1000;">Harmoniartica</span>
+                </a>
+            </div>
+            
+            <div class = "navbar">
+                <a href="/about/" class = "navbar-link">
+                    <div>about</div>
+                </a>
+                <div class = "nav-div"></div>
+                <a href="/about/" class = "navbar-link">
+                    <div>about</div>
+                </a>
+                <div class = "nav-div"></div>
+                <a href="/about/" class = "navbar-link">
+                    <div>about</div>
+                </a>
+                <div class = "nav-div"></div>
+                <a href="/about/" class = "navbar-link">
+                    <div>about</div>
+                </a>
             </div>
         </nav>
 
-        <div class = "home-popup">
-            <div class = "home-wallpaper">
-                <p>Hover over me!</p>
+        <div class = "home-wallpaper">
+            <div class = "home-popup-subtext">
+                <span class = "hover-subtext">Hover over me!</span>
+                <p class = "bruh-popup">bruh.</p>
             </div>
         </div>
 
-        <!-- Navigation Bar -->
-        <nav class = navbar>
-            <a href="about">
-                <div class = "navbar-link">about</div>
-            </a>
-        </nav>
-
     </body>
     
+    <script>
+        var bruhPopup = document.querySelectorAll('.bruh-popup');
+
+        document.addEventListener('mousemove', bruhFunc, false);
+
+        function bruhFunc(e) {
+            for (var i = bruhPopup.length; i--; ) {
+                bruhPopup[i].style.left = e.pageX + 'px';
+                bruhPopup[i].style.top = e.pageY + 'px';
+            }
+        }
+    </script>
     
 </html>

@@ -1,0 +1,173 @@
+#navbar-logo {
+    color: white;
+    text-transform: lowercase;
+    font-family: atami;
+    font-size: 16px;
+
+    position:fixed;
+    top:0;
+    left:40px;
+
+    animation-name: opening-logo;
+    animation-duration: 2s;
+}
+
+#header {
+    letter-spacing: 2px;
+    display: inline-block;
+    line-height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 38, 40, 0.8);
+    backdrop-filter: blur(9px);
+
+}
+
+#harmoniartica-logo {
+    opacity: 100%;
+    letter-spacing: 2px;
+
+    animation-name: opening-logo;
+    animation-duration: 2s;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: #303335;
+    font-family: Atami, sans-serif;
+    src: url(Atami-Regular.otf);
+}
+
+.homebtn-container {
+    
+}
+
+.home-popup-subtext {
+    width: 100%;
+    text-align: center;
+    font-family: Atami, sans-serif;
+    font-size: 12px;
+    letter-spacing: 3px;
+    position: absolute;
+    margin: 370px 0;
+    height: 20px;
+    color: #fff;
+    transition: 0.8s;
+}
+
+.hover-subtext {
+    color: white;
+    background-color: rgba(255,255,255,0.3);
+    opacity: 0.75;
+    padding: 8px 12px;
+    border-radius: 1000px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.navbar {
+    width: 100%;
+
+    font-family: atami, sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    height: 70px;
+    opacity: 1;
+    pointer-events: auto;
+
+    text-align: right;
+}
+
+.navbar-link {
+    display: inline-block;
+    color: white;
+    margin: 0 32px 0 32px;
+    height: 30px;
+    line-height: 30px;
+    transition: 0.6s;
+    cursor: pointer;
+
+    animation-name: opening-navbar;
+    animation-duration: 2s;
+}
+
+@keyframes opening-navbar {
+    from {
+
+        opacity: 0;
+        margin: 0 40px 0 40px;
+        letter-spacing: 10px;
+
+    }
+
+    to {
+       
+        opacity: 1;
+        margin: 0 32px 0 32px;
+        letter-spacing: 2px;
+    }
+}
+
+@keyframes opening-logo {
+
+    from {
+        margin: 0 25px 0 25px;
+        opacity: 0;
+        letter-spacing: 9px;
+    }
+
+    to {
+        margin: 0 0 0 0;
+        opacity: 1;
+        letter-spacing: 2px;
+    }
+
+}
+
+.nav-div {
+    display: inline-block;
+    width: 1px;
+    height: 35px;
+    transform: rotate(20deg);
+    background-color: #95a7b2;
+    position: absolute;
+    top: 25%;
+}
+
+.home-popup-subtext .bruh-popup {
+    display: none;
+
+    background: linear-gradient(90deg, rgb(122, 217, 255, 0.8) 0%,
+    rgb(191, 247, 158, 0.8) 100%);
+    color: white;
+    opacity: 1;
+    padding: 8px 12px;
+    border-radius: 1000px;
+    font-size: 10px;
+    
+}
+
+@keyframes hoverbruh {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.home-popup-subtext:hover .bruh-popup {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    animation-duration: 1s;
+    animation-name: hoverbruh;
+    
+}
+
